@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Roman number converter</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #fae1dd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fec5bb;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .input{
+            margin: 10px 0;
+        }
+        .btn{
+            padding-top: 8%;
+        }
+        .output{
+            display: flex;
+            gap: 6px;
+        }
+        #number, #roman {
+            width: 200px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #roman {
+            background-color: #fff;
+            color: black;
+        }
+        #convert-btn {
+            font-size: 15px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: 1px solid black;
+            background-color: #ff6f61;
+            color: white;
+            cursor: pointer;
+        }
+        #convert-btn:hover {
+            background-color: #ff4f4f;
+        }
+    </style>
+
+</head>
+<body>
+   <div class="container">
+    <div class="input">
+        <label>Enter a Number :</label>
+        <input type="text" id="number" />
+       </div>
+       <div class="output">
+        <label>Roman Number :</label>
+        <div id="roman"></div>
+       </div>
+        <div class="btn">
+            <button id="convert-btn">Convert</button>
+        </div>
+   </div>
+
+   <script src="roman.js"></script> 
+
+</body>
+</html>
